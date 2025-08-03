@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:padding="16dp">
+
+    <!-- Dashboard Title -->
+<TextView
+android:id="@+id/tvDashboard"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Dashboard"
+android:textSize="24sp"
+android:textStyle="bold"
+android:layout_alignParentTop="true"
+android:layout_centerHorizontal="true"/>
+
+    <!-- Notifications Label -->
+<TextView
+android:id="@+id/tvNotifications"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Notifications"
+android:textSize="18sp"
+android:layout_below="@id/tvDashboard"
+android:layout_marginTop="20dp"
+android:layout_alignParentStart="true"/>
+
+    <!-- Account Status Label -->
+<TextView
+android:id="@+id/tvAccountStatus"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Account Status: Active"
+android:textSize="18sp"
+android:layout_below="@id/tvNotifications"
+android:layout_marginTop="20dp"
+android:layout_alignParentStart="true"/>
+
+    <!-- Search Field -->
+<EditText
+android:id="@+id/etSearch"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:hint="Search dashboard..."
+android:layout_below="@id/tvAccountStatus"
+android:layout_marginTop="20dp"
+android:padding="10dp"
+android:background="@android:drawable/edit_text"/>
+
+    <!-- View Profile Button -->
+<Button
+android:id="@+id/btnViewProfile"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="View Profile"
+android:layout_below="@id/etSearch"
+android:layout_alignParentStart="true"
+android:layout_marginTop="30dp"/>
+
+    <!-- Settings Button -->
+<Button
+android:id="@+id/btnSettings"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Settings"
+android:layout_below="@id/etSearch"
+android:layout_toEndOf="@id/btnViewProfile"
+android:layout_marginStart="20dp"
+android:layout_marginTop="30dp"/>
+    </RelativeLayout>
