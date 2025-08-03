@@ -1,2 +1,2 @@
 # MultiLayoutApp
- this is mobile computing subject practrical 1
+ This is mobile computing subject practrical 1
